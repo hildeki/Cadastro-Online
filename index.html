@@ -8,23 +8,29 @@
 </head>
 
 <body>
-    <form>
+
+    <form id="clientForm"></form>
+
         <h1>Cadastro De usuário</h1>
 
         <p>Por favor registre o seu nome e o seu email:</p>
         
-        <label for="dataInput">Insira o seu usuario:</label>
+        <label for="nameInput">Insira o seu usuario:</label>
 
-        <input type="text" id="dataInput">
+        <input type="text" id="nameInput" required>
 
-        <label for="dataInput">Insira o seu email:</label>
+        <label for="emailInput">Insira o seu email:</label>
 
-        <input type="email" id="dataInput">
+        <input type="email" id="emailInput" required>
 
-        <button id="dataBtn">Registrar</button>
+        <button type="submit" id="dataBtn">
+            Registrar
+        </button>
 
         <ul id="dataList"></ul>
+    
     </form>
+    
     <script src="script.js"></script>    
 </body>
 </html>
