@@ -17,6 +17,18 @@ clientForm.addEventListener("submit", (event) => {
     const email = emailInput.value;
 
     // Exibir os dois no console
-    console.log(nameInput.value);
-    console.log(emailInput.value);
+    console.log(name);
+    console.log(email);
+
+    // Criar "li"
+    const li = document.createElement("li");
+
+    // Colocar os elementos de nome e email
+    li.textContent = name + " - " + email;
+
+    // Adicionar o "li" o HTML
+    dataList.appendChild(li);
+
+    // Reset do texto
+    clientForm.reset();
 });
