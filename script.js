@@ -4,13 +4,19 @@ const nameInput = document.getElementById("nameInput");
 const emailInput = document.getElementById("emailInput");
 const dataList = document.getElementById("dataList");
 
-// Entrega do formulario
+// Quando o formulario for enviado
 clientForm.addEventListener("submit", (event) => {
+    
+    // Impedir o comportamento padrão
     event.preventDefault();
-
+    
+    // Criar uma variavel para nome
     const name = nameInput.value;
+    
+    // Criar uma variavel para email
     const email = emailInput.value;
 
-    console.log(name);
-    console.log(email);
+    // Exibir os dois no console
+    console.log(nameInput.value);
+    console.log(emailInput.value);
 });
