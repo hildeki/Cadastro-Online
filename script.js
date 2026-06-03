@@ -12,7 +12,14 @@ async function createClient(name, email) {
 
     // Requisicao de API
      await fetch(API_URL, {
-        method: "POST"
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+            body: JSON.stringify({
+            nome: name,
+            email: email
+        })            
 });
 }
 
