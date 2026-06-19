@@ -1,4 +1,5 @@
 import { Client } from "./classes.js";
+import { validateName } from "./utils.js";
 
 const client = new Client(
     "Hideki",
@@ -6,3 +7,11 @@ const client = new Client(
 );
 
 console.log(client);
+
+console.log(
+    validateName("Hideki")
+);
+
+console.log(
+    validateName("A")
+);
