@@ -14,7 +14,7 @@ const dataList = document.getElementById("dataList");
 const message = document.getElementById("message");
 const totalClients = document.getElementById("totalClients");
 
-const API_URL = "https://crudcrud.com/api/ed224300a2b24240b8efb7660d1c1082";
+const API_URL = "https://crudcrud.com/api/ed224300a2b24240b8efb7660d1c1082/clients";
 
 const clients = [];
 
